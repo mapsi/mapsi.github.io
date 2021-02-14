@@ -29,7 +29,7 @@ jobs:
         git config --global user.name 'Angel Psiakis'
         git status
         git remote add origin https://${{secrets.commit_secret}}@github.com/mapsi/mapsi.github.io.git
-        git checkout -b master
+        git checkout -b main
         git add --all
         git commit -m "update website"
-        git push origin master -f
+        git push origin main -f
